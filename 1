@@ -1,0 +1,23 @@
+package java3;
+
+
+import java.util.LinkedList;
+import java.util.Stack;
+
+class et {
+    public static void main(String[] args) {
+        LinkedList<Integer> listInt = new LinkedList<>();
+        listInt.add(1);
+        listInt.add(2);
+        listInt.add(3);
+        listInt.add(4);
+        System.out.println(listInt);
+        Stack<Integer> stackInt = new Stack<>();
+        stackInt.addAll(listInt);
+        listInt.clear();
+        while (!stackInt.empty())
+            listInt.add(stackInt.pop());
+        System.out.println(listInt);
+    }
+            
+}
