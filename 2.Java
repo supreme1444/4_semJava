@@ -9,10 +9,11 @@ public class ListNode {
         listInt.add(2);
         listInt.add(3);
         listInt.add(4);
+        System.out.println(enqueue(listInt));
         enqueue(listInt);
         first(listInt);
         dequeue(listInt);
-        // System.out.println(enqueue(listInt));
+         
     }
 
     public static void enqueue(LinkedList<Integer> linkedeenqueue) {
